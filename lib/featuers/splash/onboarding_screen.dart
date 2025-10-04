@@ -82,7 +82,11 @@ class OnboardingScreen extends StatelessWidget {
             CustomButton(
               text: "Get Started",
               onPressed: () {
-                context.pushNamed(Routes.loginScreen);
+                context.pushNamedTransition(
+                  routeName: Routes.loginScreen,
+                  type: PageTransitionType.rightToLeftWithFade,
+                );
+                // Navigator.of(context).pushReplacementNamed(Routes.loginScreen);
               },
             ),
           ],

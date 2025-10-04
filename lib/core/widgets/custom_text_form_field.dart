@@ -50,9 +50,22 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
           readOnly: widget.readOnly,
           onTap: widget.onTap,
           decoration: InputDecoration(
+            focusedBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(12.r),
+              borderSide: BorderSide(color: Colors.grey.shade300, width: 1.w),
+            ),
+            enabledBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(12.r),
+              borderSide: BorderSide(color: Colors.grey.shade300, width: 1.w),
+            ),
+            errorBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(12.r),
+              borderSide: BorderSide(color: Colors.red.shade300, width: 1.w),
+            ),
             hintText: widget.hint,
+            hintStyle: FontsStyle.style12grey.copyWith(fontSize: 13.r),
             filled: true,
-            fillColor: Colors.grey[50],
+            fillColor: Colors.white,
             contentPadding: EdgeInsets.symmetric(
               horizontal: 16.w,
               vertical: 14.h,
