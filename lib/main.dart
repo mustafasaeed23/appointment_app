@@ -31,7 +31,7 @@ class _MyAppState extends State<MyApp> {
           debugShowCheckedModeBanner: false,
           title: 'Appointment App',
           onGenerateRoute: widget.appRouter.generateRoute,
-          initialRoute: Routes.loginScreen,
+          initialRoute: Routes.onBoardingScreen,
         );
       },
     );
