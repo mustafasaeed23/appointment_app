@@ -3,8 +3,13 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 
 class CustomCircleButton extends StatelessWidget {
-  const CustomCircleButton({super.key, required this.assetName});
+  const CustomCircleButton({
+    super.key,
+    required this.assetName,
+    this.buttonColor,
+  });
   final String assetName;
+  final Color? buttonColor;
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +17,7 @@ class CustomCircleButton extends StatelessWidget {
       width: 50.w,
       height: 50.h,
       decoration: BoxDecoration(
-        color: Colors.grey.shade100,
+        color: buttonColor ?? Colors.grey.shade100,
         shape: BoxShape.circle,
       ),
       child: SvgPicture.asset(

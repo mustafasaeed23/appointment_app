@@ -47,7 +47,15 @@ class LoginScreen extends StatelessWidget {
               SizedBox(height: 10.h),
               RememberMeWidget(),
               SizedBox(height: 20.h),
-              CustomButton(text: "Login", onPressed: () {}),
+              CustomButton(
+                text: "Login",
+                onPressed: () {
+                  context.pushNamedTransition(
+                    routeName: Routes.layoutScreen,
+                    type: PageTransitionType.fade,
+                  );
+                },
+              ),
               SizedBox(height: 20.h),
               OrSeparator(),
               SizedBox(height: 20.h),

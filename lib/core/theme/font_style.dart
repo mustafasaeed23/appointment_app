@@ -18,9 +18,19 @@ abstract class FontsStyle {
     color: Colors.grey,
     fontWeight: FontWeight.w500,
   );
-   static TextStyle style12white = GoogleFonts.poppins(
+  static TextStyle style12white = GoogleFonts.poppins(
     fontSize: 12,
     color: Colors.white,
     fontWeight: FontWeight.w500,
+  );
+  static TextStyle style18black = GoogleFonts.poppins(
+    fontSize: 18,
+    color: Colors.black,
+    fontWeight: FontWeight.bold,
+  );
+  static TextStyle style18SemiBoldBlack = GoogleFonts.poppins(
+    fontSize: 18,
+    color: Colors.black,
+    fontWeight: FontWeight.w600,
   );
 }
