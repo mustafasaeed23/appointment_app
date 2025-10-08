@@ -1,6 +1,7 @@
 import 'package:appointment_app/core/routes/routes.dart';
 import 'package:appointment_app/featuers/auth/presentation/screens/login_screen.dart';
 import 'package:appointment_app/featuers/auth/presentation/screens/register_screen.dart';
+import 'package:appointment_app/featuers/doctors/presentation/screens/doctors_screen.dart';
 import 'package:appointment_app/featuers/layout/layout_screen.dart';
 import 'package:appointment_app/featuers/notifications/presentation/screens/notifications_screen.dart';
 import 'package:appointment_app/featuers/onboarding/onboarding_screen.dart';
@@ -34,9 +35,15 @@ class AppRouter {
           type: PageTransitionType.theme,
           settings: settings,
         );
-         case Routes.notificationsScreen:
+      case Routes.notificationsScreen:
         return PageTransition(
           child: const NotificationsScreen(),
+          type: PageTransitionType.theme,
+          settings: settings,
+        );
+      case Routes.doctorsScreen:
+        return PageTransition(
+          child: const DoctorsScreen(),
           type: PageTransitionType.theme,
           settings: settings,
         );

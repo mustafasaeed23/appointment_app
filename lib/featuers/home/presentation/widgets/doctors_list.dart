@@ -8,7 +8,8 @@ class DoctorsList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
-      physics: NeverScrollableScrollPhysics(),
+      physics: BouncingScrollPhysics(),
+      scrollDirection: Axis.vertical,
       shrinkWrap: true,
       itemCount: 10,
       separatorBuilder: (context, index) => SizedBox(height: 10.h),

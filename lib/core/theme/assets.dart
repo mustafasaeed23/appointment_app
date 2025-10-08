@@ -26,5 +26,5 @@ class Assets {
   static const String walletIcon = "assets/icons/wallet_icon.svg";
   static const String blueCalenderIcon = "assets/icons/blue_calender.svg";
   static const String redCalenderIcon = "assets/icons/calendar-remove.svg";
-
+  static const String sortIcon = "assets/icons/sort_icon.svg";
 }
