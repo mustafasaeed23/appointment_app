@@ -1,6 +1,8 @@
 import 'package:appointment_app/core/routes/routes.dart';
+import 'package:appointment_app/featuers/appointments/presentation/screens/book_appointment_screen.dart';
 import 'package:appointment_app/featuers/auth/presentation/screens/login_screen.dart';
 import 'package:appointment_app/featuers/auth/presentation/screens/register_screen.dart';
+import 'package:appointment_app/featuers/doctors/presentation/screens/doctor_details_screen.dart';
 import 'package:appointment_app/featuers/doctors/presentation/screens/doctors_screen.dart';
 import 'package:appointment_app/featuers/layout/layout_screen.dart';
 import 'package:appointment_app/featuers/notifications/presentation/screens/notifications_screen.dart';
@@ -44,6 +46,18 @@ class AppRouter {
       case Routes.doctorsScreen:
         return PageTransition(
           child: const DoctorsScreen(),
+          type: PageTransitionType.theme,
+          settings: settings,
+        );
+      case Routes.doctorDetailsScreen:
+        return PageTransition(
+          child: const DoctorDetailsScreen(),
+          type: PageTransitionType.theme,
+          settings: settings,
+        );
+      case Routes.bookAppointmentScreen:
+        return PageTransition(
+          child: const BookAppointmentScreen(),
           type: PageTransitionType.theme,
           settings: settings,
         );

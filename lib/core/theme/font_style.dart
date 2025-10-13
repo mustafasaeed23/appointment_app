@@ -18,6 +18,11 @@ abstract class FontsStyle {
     color: Colors.grey,
     fontWeight: FontWeight.w500,
   );
+   static TextStyle style14Black = GoogleFonts.poppins(
+    fontSize: 14,
+    color: Colors.black,
+    fontWeight: FontWeight.w500,
+  );
   static TextStyle style12white = GoogleFonts.poppins(
     fontSize: 12,
     color: Colors.white,

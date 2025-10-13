@@ -1,5 +1,6 @@
 import 'package:appointment_app/core/theme/assets.dart';
 import 'package:appointment_app/core/theme/font_style.dart';
+import 'package:appointment_app/featuers/doctors/presentation/widgets/sort_bottom_sheet.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
@@ -37,7 +38,12 @@ class SearchWidget extends StatelessWidget {
         ),
         SizedBox(width: 10.w),
         Expanded(
-          child: SvgPicture.asset(Assets.sortIcon, width: 24.w, height: 24.h),
+          child: InkWell(
+            onTap: () {
+              DoctorSortBottomSheet.doctorSortBottomSheet(context);
+            },
+            child: SvgPicture.asset(Assets.sortIcon, width: 24.w, height: 24.h),
+          ),
         ),
       ],
     );

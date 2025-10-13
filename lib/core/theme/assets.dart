@@ -5,6 +5,9 @@ class Assets {
   static const String doctorImage = "assets/images/doctor_image.png";
   static const String bannerImage = "assets/images/Banner.png";
   static const String doctor1 = "assets/images/doctor_card_image.png";
+  static const String doctorDetailsImage = "assets/images/doctor_details_image.png";
+  static const String mapImage = "assets/images/Map.png";
+  static const String patientImage = "assets/images/patient.png";
   // icons
   static const String googleIcon = "assets/icons/google_icon.svg";
   static const String facebookIcon = "assets/icons/facebook_icon.svg";
@@ -27,4 +30,6 @@ class Assets {
   static const String blueCalenderIcon = "assets/icons/blue_calender.svg";
   static const String redCalenderIcon = "assets/icons/calendar-remove.svg";
   static const String sortIcon = "assets/icons/sort_icon.svg";
+  static const String starIcon = "assets/icons/star_icon.svg";
+  static const String messageIcon = "assets/icons/message-text.svg";
 }

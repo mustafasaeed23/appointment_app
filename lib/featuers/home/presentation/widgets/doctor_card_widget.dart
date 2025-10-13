@@ -1,7 +1,9 @@
+import 'package:appointment_app/core/routes/routes.dart';
 import 'package:appointment_app/core/theme/assets.dart';
 import 'package:appointment_app/core/theme/font_style.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:page_transition/page_transition.dart';
 
 class DoctorCardWidget extends StatelessWidget {
   const DoctorCardWidget({super.key});
